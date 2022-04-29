@@ -17,6 +17,6 @@ RSpec.describe Book, type: :model do
   it { should validate_uniqueness_of(:isbn_13) }
 
   it 'has a valid factory' do
-    expect(build(:book)).to be_valid
+    expect(build(:ruby_on_rails_tutorial)).to be_valid
   end
 end
